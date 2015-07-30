@@ -11,7 +11,8 @@ public class profiles_contact {
 
     //INTEGERS BELOW
 
-    /* These two methods are not needed
+    /*
+    These two methods are not needed
     //profile_id
     public void setProfiles_id(int profiles_id)
     {
@@ -22,7 +23,20 @@ public class profiles_contact {
     {
         return this.profiles_id;
     }
+
+
+    public profiles_contact(String first_name,)
+    {
+        this.first_name = first_name;
+    }
     */
+
+
+    public profiles_contact(String username, String password)
+    {
+        this.username = username;
+        this.password = password;
+    }
 
     //house number
     public void setHouse_number(int house_number)

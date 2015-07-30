@@ -1,6 +1,7 @@
 package com.praticelogin.bigkbear.timetablingonline;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -9,31 +10,40 @@ import android.widget.Toast;
 /**
  * Created by BigKBear on 7/28/15.
  */
-public class SignUp extends Activity {
+public class Registration_Page extends Activity {
 
-    SQLiteDatabaseHelper signup_db_helper = new SQLiteDatabaseHelper(SignUp.this);
+    EditText firstname, middlename, lastname, address, housenumber, cellnumber, gender, role,username, pass1, pass2;
+    //String firstnamestr, middlenamestr, lastnamestr, addressstr ;
+
+    SQLiteDatabaseHelper signup_db_helper = new SQLiteDatabaseHelper(Registration_Page.this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup_teacher);
+        setContentView(R.layout.registration_page);
+
+        firstname = (EditText)findViewById(R.id.TFfirstname);
+        middlename = (EditText)findViewById(R.id.TFmiddlename);
+        lastname = (EditText)findViewById(R.id.TFlastname);
+        address = (EditText)findViewById(R.id.TFaddress);
+        housenumber = (EditText)findViewById(R.id.TFhousenumber);
+        cellnumber = (EditText)findViewById(R.id.TFcellnumber);
+        gender = (EditText)findViewById(R.id.TFgender);
+        role = (EditText)findViewById(R.id.TFrole);
+        username = (EditText)findViewById(R.id.TFusername);
+        pass1 = (EditText)findViewById(R.id.TFpass1);
+        pass2 = (EditText)findViewById(R.id.TFpass2);
+    }
+
+    public void onRegistrationLoginClick(View v)
+    {
+        Intent login = new Intent(Registration_Page.this, Login_activity.class);
+        startActivity(login);
     }
 
     public void onSignUpClick(View v)
     {
         if(v.getId() == R.id.Bsignupbutton)
         {
-            EditText firstname = (EditText)findViewById(R.id.TFfirstname);
-            EditText middlename = (EditText)findViewById(R.id.TFmiddlename);
-            EditText lastname = (EditText)findViewById(R.id.TFlastname);
-            EditText address = (EditText)findViewById(R.id.TFaddress);
-            EditText housenumber = (EditText)findViewById(R.id.TFhousenumber);
-            EditText cellnumber = (EditText)findViewById(R.id.TFcellnumber);
-            EditText gender = (EditText)findViewById(R.id.TFgender);
-            EditText role = (EditText)findViewById(R.id.TFrole);
-            EditText username = (EditText)findViewById(R.id.TFusername);
-            EditText pass1 = (EditText)findViewById(R.id.TFpass1);
-            EditText pass2 = (EditText)findViewById(R.id.TFpass2);
-
             String firstnamestr = firstname.getText().toString();
             String middlenamestr = middlename.getText().toString();
             String lastnamestr = lastname.getText().toString();
@@ -48,7 +58,7 @@ public class SignUp extends Activity {
             if(!pass1str.equals(pass2str))
             {
                 //popup message
-                Toast pass = Toast.makeText(SignUp.this, "Passwords do not match!", Toast.LENGTH_SHORT);
+                Toast pass = Toast.makeText(Registration_Page.this, "Passwords do not match! Enter again", Toast.LENGTH_SHORT);
                 pass.show();
             }
             else

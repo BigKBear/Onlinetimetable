@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/emptyString"
-        android:id="@+id/TVusername" />
+        android:id="@+id/main_TVusername" />
 
     <Button
         android:id="@+id/planner_button"

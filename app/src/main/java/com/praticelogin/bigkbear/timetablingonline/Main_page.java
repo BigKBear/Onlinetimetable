@@ -18,7 +18,7 @@ public class Main_page extends Activity {
         String username = getIntent().getStringExtra("Username");
 
         //set the text field to that value
-        TextView tv = (TextView)findViewById(R.id.TVusername);
+        TextView tv = (TextView)findViewById(R.id.main_TVusername);
         tv.setText(username);
     }
 
