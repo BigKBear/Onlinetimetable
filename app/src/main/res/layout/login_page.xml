@@ -10,56 +10,54 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Username"
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TFusername"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/TFpassword"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/TFusername_login"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Password"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/TFusername"
-        android:layout_alignParentLeft="true"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/TFusername_login"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Log In"
-        android:id="@+id/BLogin"
-        android:onClick="onLoginClick"
-        android:layout_below="@+id/TFpassword"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/tvRegisterLink"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Register Here"
-        android:onClick="onRegisterClick"
-        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/TFpassword_login"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/TFusername_login" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/Blogin_login"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onLoginClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Register Here!"
+        android:id="@+id/Lregister_login"
+        android:onClick="onRegisterClick"
+        android:layout_below="@+id/Blogin_login"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
