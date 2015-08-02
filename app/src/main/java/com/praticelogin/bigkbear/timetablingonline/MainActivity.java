@@ -41,6 +41,12 @@ public class MainActivity extends ActionBarActivity{
         authenticate(profile);
     }
 
+    public void onViewTableClick(View v)
+    {
+        Intent intent = new Intent(MainActivity.this , MasterFormTimetable.class);
+        startActivity(intent);
+    }
+
     private void authenticate(Profile profile)
     {
         ServerRequests serverRequests = new ServerRequests(MainActivity.this);
@@ -71,4 +77,6 @@ public class MainActivity extends ActionBarActivity{
             }
         });
     }
+
+
 }

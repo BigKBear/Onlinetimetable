@@ -43,4 +43,12 @@
         android:text="Timetable"
         android:layout_height="wrap_content"
         android:onClick="onMainPageClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/Blogout"
+        android:layout_below="@+id/Bgenerate_timetable"
+        android:onClick="onLogoutClick" />
 </LinearLayout>

@@ -1,14 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="This data will be pulled directly from the server it requires the data from previous view Modify Classes and assign Teachers"
-        android:id="@+id/textView12"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal">
 
+        <!-- Row 1 column names-->
+        <TableRow>
+            <TextView
+                android:text="Form name"/>
+        </TableRow>
+
+        <!-- Row 2 column names-->
+        <TableRow>
+            <TextView
+                android:text="Time" />
+            <TextView
+                android:text="Monday" />
+            <TextView
+                android:text="Tuesday" />
+            <TextView
+                android:text="Wednesday" />
+            <TextView
+                android:text="Thursday" />
+            <TextView
+                android:text="Friday" />
+
+        </TableRow>
+
+        <!-- Row 3 period one for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="9:00-9:40" />
+
+            <TextView
+                android:id="@+id/MP1"
+                android:text="MP1" />
+
+            <TextView
+                android:id="@+id/TP1"
+                android:text="TP1" />
+
+            <TextView
+                android:text="WP1" />
+
+            <TextView
+                android:text="ThP1"/>
+
+            <TextView
+                android:text="Fp1" />
+
+
+        </TableRow>
+
+        <!-- Row 4 period two for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="9:00-10:15" />
+
+            <TextView
+                android:text="MP2"/>
+
+            <TextView
+                android:text="TP2"/>
+
+            <TextView
+                android:text="WP2" />
+
+            <TextView
+                android:text="ThP2"/>
+
+            <TextView
+                android:text="Fp2" />
+
+        </TableRow>
+
+        <!-- Row 5 period three for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="10:15-10:45" />
+
+            <TextView
+                android:text="MP3" />
+
+            <TextView
+                android:text="TP3" />
+
+            <TextView
+                android:text="WP3" />
+
+            <TextView
+                android:text="ThP3"/>
+
+            <TextView
+                android:text="Fp3" />
+
+        </TableRow>
+
+        <!-- Row 6 period four for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="10:45-11:40" />
+
+            <TextView
+                android:text="MP4" />
+
+            <TextView
+                android:text="TP4" />
+
+            <TextView
+                android:text="WP4" />
+
+            <TextView
+                android:text="ThP4" />
+
+            <TextView
+                android:text="Fp4" />
+        </TableRow>
+
+        <!-- Row 7 lunch period for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="11:40-12:20"/>
+
+            <TextView
+                android:text="MLunch" />
+
+            <TextView
+                android:text="TLunch"/>
+
+            <TextView
+                android:text="WLunch"/>
+
+            <TextView
+                android:text="ThLunch" />
+
+            <TextView
+                android:text="FLunch"/>
+
+        </TableRow>
+
+        <!-- Row 8 period five for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="12:20-1:00" />
+
+            <TextView
+                android:text="MP5"/>
+
+            <TextView
+                android:text="TP5"/>
+
+            <TextView
+                android:text="WP5" />
+
+            <TextView
+                android:text="ThP5" />
+
+            <TextView
+                android:text="Fp5" />
+
+        </TableRow>
+
+        <!-- Row 9 period six for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="1:00-1:40" />
+
+            <TextView
+                android:text="MP6"/>
+
+            <TextView
+                android:text="TP6"/>
+
+            <TextView
+                android:text="WP6"/>
+
+            <TextView
+                android:text="ThP6" />
+
+            <TextView
+                android:text="Fp6"/>
+
+        </TableRow>
+
+        <!-- Row 10 period seven for all days column names-->
+        <TableRow>
+            <TextView
+                android:text="1:40-2:20"/>
+
+            <TextView
+                android:text="MP7" />
+
+            <TextView
+                android:text="TP7" />
+
+            <TextView
+                android:text="WP7"/>
+
+            <TextView
+                android:text="ThP7" />
+
+            <TextView
+                android:text="Fp7" />
+
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
