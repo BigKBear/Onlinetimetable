@@ -65,7 +65,7 @@ public class MainActivity extends ActionBarActivity{
                     localDatabase.storeData(returnedContact);
                     localDatabase.setUserLoggedIn(true);
 
-                    Intent intent = new Intent(MainActivity.this , DisplayInfo.class);
+                    Intent intent = new Intent(MainActivity.this , MainPage.class);
                     startActivity(intent);
                 }
 
