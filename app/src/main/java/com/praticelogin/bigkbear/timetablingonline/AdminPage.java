@@ -4,16 +4,50 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 /**
  * Created by BigKBear on 8/1/15.
  */
 public class AdminPage extends Activity {
+
+    TextView tvadminname;
+    LocalDatabase adminlocalDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_page);
+
+        tvadminname = (TextView)findViewById(R.id.TVadminname);
+        adminlocalDatabase = new LocalDatabase(this);
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if(authenticate() == true)
+        {
+            displayContactDetails();
+        }
+        else
+        {
+            Intent intent = new Intent(AdminPage.this , MainActivity.class);
+            startActivity(intent);
+        }
+    }
+
+    private boolean authenticate()
+    {
+        return adminlocalDatabase.getUserLoggedIn();
+    }
+
+    private void displayContactDetails()
+    {
+        Contact contact = adminlocalDatabase.getLoggedInUser();
+        tvadminname.setText(contact.name);
+    }
+
 
     public void onModifyClassesClick(View v)
     {
@@ -38,4 +72,14 @@ public class AdminPage extends Activity {
             startActivity(sub);
         }
     }
+
+    public void onLogoutClick(View view){
+
+        adminlocalDatabase.clearData();
+        adminlocalDatabase.setUserLoggedIn(false);
+
+        Intent intent = new Intent(AdminPage.this , MainActivity.class);
+        startActivity(intent);
+    }
 }
+

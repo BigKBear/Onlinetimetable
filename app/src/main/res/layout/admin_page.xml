@@ -1,38 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:onClick="onGenerateTimetablesClick"
+    android:layout_width="match_parent"
     android:background="#ffccdcff">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to the admin area"
+        android:text="Welcome to the admin area, "
         android:id="@+id/textView10"
-        android:layout_gravity="center_horizontal" />
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TVadminname"
+        android:layout_toRightOf="@+id/textView10" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Modify Classes"
         android:id="@+id/Bmodify_classes"
-        android:onClick="onModifyClassesClick" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TVadminname"
+        android:onClick="onModifyClassesClick"
+        />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Assign Teachers"
         android:id="@+id/Bassign_teachers"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onAssignTeacherClick" />
+        android:onClick="onAssignTeacherClick"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Generate Timetables"
         android:id="@+id/Bgenerate_timetable"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onGenerateTimtableClick" />
-</LinearLayout>
+        android:onClick="onGenerateTimtableClick"
+        android:layout_below="@+id/Bmodify_classes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/Blogout"
+        android:layout_below="@+id/Bgenerate_timetable"
+        android:onClick="onLogoutClick" />
+</RelativeLayout>

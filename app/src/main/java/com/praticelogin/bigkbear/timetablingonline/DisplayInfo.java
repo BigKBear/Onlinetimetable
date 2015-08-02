@@ -86,6 +86,5 @@ public class DisplayInfo extends Activity {
 
         Intent intent = new Intent(DisplayInfo.this , MainActivity.class);
         startActivity(intent);
-
     }
 }
