@@ -42,10 +42,13 @@ public class DisplayInfo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_info);
 
+        //display_info.xml
         tvusername = (TextView)findViewById(R.id.TVusername);
         tvpassword = (TextView)findViewById(R.id.TVpassword);
         tvname = (TextView)findViewById(R.id.TVname);
         tvemail = (TextView)findViewById(R.id.TVemail);
+
+
 
         localDatabase = new LocalDatabase(this);
     }
@@ -72,11 +75,11 @@ public class DisplayInfo extends Activity {
 
     private void displayContactDetails()
     {
-        Contact contact = localDatabase.getLoggedInUser();
-        tvname.setText(contact.name);
-        tvemail.setText(contact.email);
-        tvusername.setText(contact.username);
-        tvpassword.setText(contact.password);
+        Profile profile = localDatabase.getLoggedInUser();
+        tvname.setText(profile.fullname);
+        tvemail.setText(profile.email);
+        tvusername.setText(profile.username);
+        tvpassword.setText(profile.password);
     }
 
     public void onLogoutClick(View view){

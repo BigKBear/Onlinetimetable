@@ -44,8 +44,8 @@ public class AdminPage extends Activity {
 
     private void displayContactDetails()
     {
-        Contact contact = adminlocalDatabase.getLoggedInUser();
-        tvadminname.setText(contact.name);
+        Profile profile = adminlocalDatabase.getLoggedInUser();
+        tvadminname.setText(profile.fullname);
     }
 
 

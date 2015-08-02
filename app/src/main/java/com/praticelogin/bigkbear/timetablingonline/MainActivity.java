@@ -36,22 +36,21 @@ public class MainActivity extends ActionBarActivity{
         String username = etusername.getText().toString();
         String password = etpassword.getText().toString();
 
-        Contact contact = new Contact(username,  password);
-        Log.e("uname = ", contact.username);
-        authenticate(contact);
-
+        Profile profile = new Profile(username,  password);
+        Log.e("uname = ", profile.username);
+        authenticate(profile);
     }
 
-    private void authenticate(Contact contact)
+    private void authenticate(Profile profile)
     {
         ServerRequests serverRequests = new ServerRequests(MainActivity.this);
 
 
-        serverRequests.fetchDataInBackground(contact , new GetUserCallback() {
+        serverRequests.fetchDataInBackground(profile , new GetUserCallback() {
 
             @Override
-            public void done(Contact returnedContact) {
-                if(returnedContact == null)
+            public void done(Profile retunedProfile) {
+                if(retunedProfile == null)
                 {
                     //show an error message
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -62,7 +61,7 @@ public class MainActivity extends ActionBarActivity{
                 else
                 {
                     //Log user in
-                    localDatabase.storeData(returnedContact);
+                    localDatabase.storeData(retunedProfile);
                     localDatabase.setUserLoggedIn(true);
 
                     Intent intent = new Intent(MainActivity.this , MainPage.class);
