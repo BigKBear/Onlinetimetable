@@ -50,7 +50,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="onLoginClick" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"

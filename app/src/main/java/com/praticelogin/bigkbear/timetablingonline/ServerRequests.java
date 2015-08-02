@@ -214,20 +214,38 @@ public class ServerRequests {
             this.callback = callback;
         }
 
+        /*
+        this.first_name = first_name;
+        this.middle_name = middle_name;
+        this.last_name = last_name;
+        this.address = address;
+        this.gender=gender;
+        this.username=username;
+        this.password=password;
+        this.house_number=house_number;
+        this.cell_number=cell_number;
+        this.role_role_id=role_role_id;
+        */
         @Override
         protected Void doInBackground(Void... voids) {
             ArrayList<NameValuePair> data_to_send = new ArrayList<>();
-            data_to_send.add(new BasicNameValuePair("Name" , contact.name));
-            data_to_send.add(new BasicNameValuePair("Email" , contact.email));
+            data_to_send.add(new BasicNameValuePair("Name" , contact.first_name));
+            data_to_send.add(new BasicNameValuePair("Email" , contact.middle_name));
+            data_to_send.add(new BasicNameValuePair("Email" , contact.last_name));
+            data_to_send.add(new BasicNameValuePair("Email" , contact.address));
+            data_to_send.add(new BasicNameValuePair("Email" , contact.gender));
             data_to_send.add(new BasicNameValuePair("Username" , contact.username));
             data_to_send.add(new BasicNameValuePair("Password" , contact.password));
+            data_to_send.add(new BasicNameValuePair("Password" , contact.house_number + ""));
+            data_to_send.add(new BasicNameValuePair("Password" , contact.cell_number + ""));
+            data_to_send.add(new BasicNameValuePair("Password" , contact.role_role_id + ""));
 
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams , CONNECTION_TIMEOUT);
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "Register.php");
+            HttpPost post = new HttpPost(SERVER_ADDRESS + "ProfileRegister.php");
 
             try {
                 post.setEntity(new UrlEncodedFormEntity(data_to_send));
@@ -273,7 +291,7 @@ public class ServerRequests {
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "FetchUserData.php");
+            HttpPost post = new HttpPost(SERVER_ADDRESS + "FetchProfileData.php");
 
             Contact retunedContact = null;
             try {
@@ -294,16 +312,37 @@ public class ServerRequests {
                 }
                 else
                 {
-                    String name,email;
-                    name = null;
-                    email=null;
+                    int profiles_id, house_number, cell_number, role_role_id;
+                    String first_name, middle_name, last_name, address, gender, username, password;
 
-                    if(jsonObject.has("name"))
-                        name = jsonObject.getString("name");
-                    if(jsonObject.has("email"))
-                        email =jsonObject.getString("email");
+                    first_name = null;
+                    middle_name = null;
+                    last_name = null;
+                    address = null;
+                    gender = null;
+                    house_number = 0;
+                    cell_number = 0;
+                    role_role_id = 0;
 
-                    retunedContact = new Contact(name , email , contact.username , contact.password);
+                    if(jsonObject.has("first_name"))
+                        first_name = jsonObject.getString("first_name");
+                    if(jsonObject.has("middle_name"))
+                        middle_name =jsonObject.getString("middle_name");
+                    if(jsonObject.has("last_name"))
+                        last_name =jsonObject.getString("last_name");
+                    if(jsonObject.has("address"))
+                        address =jsonObject.getString("address");
+                    if(jsonObject.has("gender"))
+                        gender =jsonObject.getString("gender");
+                    if(jsonObject.has("house_number"))
+                        house_number =jsonObject.getInt("house_number");
+                    if(jsonObject.has("cell_number"))
+                        cell_number =jsonObject.getInt("cell_number");
+                    if(jsonObject.has("role_role_id"))
+                        role_role_id =jsonObject.getInt("role_role_id");
+
+                    retunedContact = new Contact(first_name, middle_name, last_name, address, gender,  contact.username , contact.password,
+                            house_number,cell_number,role_role_id);
 
                 }
 
