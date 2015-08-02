@@ -72,24 +72,18 @@ public class Register extends Activity {
         }
     }
     */
-    EditText firstname, middlename, lastname, address, housenumber, cellnumber, gender, role,username, pass1, pass2;
+    EditText etname ,etemail , etusername , etpassword, etconfirm_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration_page);
 
-        firstname = (EditText)findViewById(R.id.TFfirstname);
-        middlename = (EditText)findViewById(R.id.TFmiddlename);
-        lastname = (EditText)findViewById(R.id.TFlastname);
-        address = (EditText)findViewById(R.id.TFaddress);
-        housenumber = (EditText)findViewById(R.id.TFhousenumber);
-        cellnumber = (EditText)findViewById(R.id.TFcellnumber);
-        gender = (EditText)findViewById(R.id.TFgender);
-        role = (EditText)findViewById(R.id.TFrole);
-        username = (EditText)findViewById(R.id.TFusername);
-        pass1 = (EditText)findViewById(R.id.TFpass1);
-        pass2 = (EditText)findViewById(R.id.TFpass2);
+        etusername = (EditText)findViewById(R.id.TFusername_register);
+        etpassword = (EditText)findViewById(R.id.TFpassword_register);
+        etname = (EditText)findViewById(R.id.TFname_register);
+        etemail = (EditText)findViewById(R.id.TFemail_register);
+        etconfirm_password = (EditText)findViewById(R.id.TFconfirm_password_register);
 
     }
 
@@ -100,30 +94,17 @@ public class Register extends Activity {
     }
 
     public void onRegisterClick(View view){
-        String firstnamestr = firstname.getText().toString();
-        String middlenamestr = middlename.getText().toString();
-        String lastnamestr = lastname.getText().toString();
-        String addressstr = address.getText().toString();
-        String genderstr = gender.getText().toString();
-        String usernamestr = username.getText().toString();
-        String pass1str = pass1.getText().toString();
-
-        int housenumberstr = Integer.parseInt(housenumber.getText().toString());
-        int cellnumberstr = Integer.parseInt(cellnumber.getText().toString());
-        int rolestr = Integer.parseInt(role.getText().toString());
-
-        //String housenumberstr = housenumber.getText().toString();
-        //String cellnumberstr = cellnumber.getText().toString();
-        //String rolestr = role.getText().toString();
-
-        String pass2str = pass2.getText().toString();
+        String name = etname.getText().toString();
+        String email = etemail.getText().toString();
+        String username = etusername.getText().toString();
+        String password = etpassword.getText().toString();
+        String confirm_password = etconfirm_password.getText().toString();
 
 
 
-        if(pass1str.equals(pass2str))
+        if(password.equals(confirm_password))
         {
-            Contact contact = new Contact(firstnamestr, middlenamestr, lastnamestr, addressstr, genderstr, usernamestr, pass1str,
-                    housenumberstr,cellnumberstr,rolestr);
+            Contact contact = new Contact(name ,email , username,password);
             ServerRequests serverRequests = new ServerRequests(this);
             serverRequests.storeDataInBackground(contact , new GetUserCallback() {
                 @Override
@@ -136,5 +117,6 @@ public class Register extends Activity {
         else{
             Toast.makeText(this , "Passwords don't match! Enter again!" , Toast.LENGTH_LONG).show();
         }
+
     }
 }

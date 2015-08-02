@@ -76,7 +76,7 @@ public class LocalDatabase {
     }
     */
 
-    public static final String SP_NAME = "ProfileDetails";
+    public static final String SP_NAME = "UserDetails";
     SharedPreferences localDatabase;
 
     public LocalDatabase(Context context)
@@ -87,33 +87,21 @@ public class LocalDatabase {
     public void storeData(Contact contact)
     {
         SharedPreferences.Editor spEditor = localDatabase.edit();
-        spEditor.putString("first_name", contact.first_name);
-        spEditor.putString("middle_name", contact.middle_name);
-        spEditor.putString("last_name", contact.last_name);
-        spEditor.putString("address", contact.address);
-        spEditor.putInt("house_number", contact.house_number);
-        spEditor.putInt("cell_number", contact.cell_number);
-        spEditor.putString("gender", contact.gender);
-        spEditor.putString("username", contact.username);
-        spEditor.putString("password", contact.password);
-        spEditor.putInt("role_role_id", contact.role_role_id);
+        spEditor.putString("Name" , contact.name);
+        spEditor.putString("Email" , contact.email);
+        spEditor.putString("Username" , contact.username);
+        spEditor.putString("Password" , contact.password);
         spEditor.commit();
     }
 
     public Contact getLoggedInUser()
     {
-        String first_name = localDatabase.getString("first_name","");
-        String middle_name = localDatabase.getString("middle_name","");
-        String last_name = localDatabase.getString("last_name","");
-        String address = localDatabase.getString("address","");
-        String house_number = localDatabase.getString("house_number","");
-        String cell_number = localDatabase.getString("cell_number","");
-        String gender = localDatabase.getString("gender","");
-        String username = localDatabase.getString("username","");
-        String password = localDatabase.getString("password","");
-        String role_role_id = localDatabase.getString("role_role_id","");
+        String name = localDatabase.getString("Name" , "");
+        String email = localDatabase.getString("Email" , "");
+        String username = localDatabase.getString("Username" , "");
+        String password = localDatabase.getString("Password" , "");
 
-        Contact storedContact = new Contact(username, password);
+        Contact storedContact = new Contact(name , email , username , password);
         return storedContact;
     }
 

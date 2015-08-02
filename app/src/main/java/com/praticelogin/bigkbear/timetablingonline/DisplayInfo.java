@@ -73,8 +73,8 @@ public class DisplayInfo extends Activity {
     private void displayContactDetails()
     {
         Contact contact = localDatabase.getLoggedInUser();
-        tvname.setText(contact.first_name);
-        tvemail.setText(contact.address);
+        tvname.setText(contact.name);
+        tvemail.setText(contact.email);
         tvusername.setText(contact.username);
         tvpassword.setText(contact.password);
     }
