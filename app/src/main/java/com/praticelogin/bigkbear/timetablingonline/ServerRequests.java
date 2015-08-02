@@ -213,17 +213,21 @@ public class ServerRequests {
         @Override
         protected Void doInBackground(Void... voids) {
             ArrayList<NameValuePair> data_to_send = new ArrayList<>();
-            data_to_send.add(new BasicNameValuePair("Name" , profile.fullname));
+            data_to_send.add(new BasicNameValuePair("Fullname" , profile.fullname));
             data_to_send.add(new BasicNameValuePair("Email" , profile.email));
+            data_to_send.add(new BasicNameValuePair("Address" , profile.address));
+            data_to_send.add(new BasicNameValuePair("Housenumber" , profile.housenumber+""));
+            data_to_send.add(new BasicNameValuePair("Cellnumber" , profile.cellnumber+""));
             data_to_send.add(new BasicNameValuePair("Username" , profile.username));
             data_to_send.add(new BasicNameValuePair("Password" , profile.password));
+            data_to_send.add(new BasicNameValuePair("Role" , profile.role +""));
 
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams , CONNECTION_TIMEOUT);
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "Contacts/RegisterContacts.php");
+            HttpPost post = new HttpPost(SERVER_ADDRESS + "Profiles/ProfileRegister.php");
 
             try {
                 post.setEntity(new UrlEncodedFormEntity(data_to_send));
@@ -269,7 +273,7 @@ public class ServerRequests {
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "Contacts/FetchContacts.php");
+            HttpPost post = new HttpPost(SERVER_ADDRESS + "Profiles/FetchProfileData.php");
 
             Profile retunedProfile = null;
             try {
@@ -296,10 +300,22 @@ public class ServerRequests {
                     fullname = email = address = username = password = null;
                     housenumber = cellnumber = role = 0;
 
-                    if(jsonObject.has("name"))
+                    if(jsonObject.has("fullname"))
                         fullname = jsonObject.getString("fullname");
                     if(jsonObject.has("email"))
                         email =jsonObject.getString("email");
+                    if(jsonObject.has("address"))
+                        address =jsonObject.getString("address");
+                    if(jsonObject.has("username"))
+                        username =jsonObject.getString("username");
+                    if(jsonObject.has("password"))
+                        password =jsonObject.getString("password");
+                    if(jsonObject.has("housenumber"))
+                        housenumber =jsonObject.getInt("housenumber");
+                    if(jsonObject.has("cellnumber"))
+                        cellnumber =jsonObject.getInt("cellnumber");
+                    if(jsonObject.has("role"))
+                        role =jsonObject.getInt("role");
 
                     retunedProfile = new Profile(fullname , email , address ,  username , password , housenumber, cellnumber, role);
 

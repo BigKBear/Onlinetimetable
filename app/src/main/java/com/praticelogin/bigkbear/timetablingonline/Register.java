@@ -63,7 +63,7 @@ public class Register extends Activity {
 }
     */
 
-    EditText etname ,etemail , etusername , etpassword, etconfirm_password, ethousenumber, etcellnumber, etrole;
+    EditText etname ,etemail , etusername , etaddress, etpassword, etconfirm_password, ethousenumber, etcellnumber, etrole;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +74,10 @@ public class Register extends Activity {
         etpassword = (EditText)findViewById(R.id.TFpassword_register);
         etname = (EditText)findViewById(R.id.TFname_register);
         etemail = (EditText)findViewById(R.id.TFemail_register);
+        etaddress = (EditText)findViewById(R.id.TFaddress_register);
+        ethousenumber = (EditText)findViewById(R.id.TFhousenumber_register);
+        etcellnumber = (EditText)findViewById(R.id.TFcellnumber_register);
+        etrole = (EditText)findViewById(R.id.TFrole_register);
         etconfirm_password = (EditText)findViewById(R.id.TFconfirm_password_register);
 
     }
@@ -87,7 +91,7 @@ public class Register extends Activity {
     public void onRegisterClick(View view){
         String fullname = etname.getText().toString();
         String email = etemail.getText().toString();
-        String address = etemail.getText().toString();
+        String address = etaddress.getText().toString();
         String username = etusername.getText().toString();
         String password = etpassword.getText().toString();
         String confirm_password = etconfirm_password.getText().toString();
