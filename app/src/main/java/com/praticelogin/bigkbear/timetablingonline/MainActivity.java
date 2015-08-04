@@ -58,11 +58,13 @@ public class MainActivity extends ActionBarActivity{
         Profile profile = new Profile(username,  password);
         Log.e("uname = ", profile.username);
         authenticate(profile);
+
+        //finish();
     }
 
     public void onViewTableClick(View v)
     {
-        Intent intent = new Intent(MainActivity.this , MasterFormTimetable.class);
+        Intent intent = new Intent(MainActivity.this , Test.class);
         startActivity(intent);
     }
 
@@ -71,31 +73,27 @@ public class MainActivity extends ActionBarActivity{
         ServerRequests serverRequests = new ServerRequests(MainActivity.this);
 
 
-        serverRequests.fetchDataInBackground(profile , new GetUserCallback() {
+        serverRequests.fetchDataInBackground(profile, new GetUserCallback() {
 
             @Override
             public void done(Profile retunedProfile) {
-                if(retunedProfile == null)
-                {
+                if (retunedProfile == null) {
                     //show an error message
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setMessage("Username & Password don't match!");
-                    builder.setPositiveButton("OK" , null);
+                    builder.setPositiveButton("OK", null);
                     builder.show();
-                }
-                else
-                {
+                } else {
                     //Log user in
                     localDatabase.storeData(retunedProfile);
                     localDatabase.setUserLoggedIn(true);
 
-                    Intent intent = new Intent(MainActivity.this , MainPage.class);
+                    Intent intent = new Intent(MainActivity.this, MainPage.class);
                     startActivity(intent);
                 }
 
             }
         });
     }
-
 
 }

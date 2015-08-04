@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent">
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_gravity="center_horizontal"
-        >
 
-        <!-- Row 1 column names-->
-        <TableRow
-            android:padding="12dp">
-            <TextView
-                android:layout_span="35"
-                android:gravity="center"
-                android:text="summary timetable of teachers"/>
-        </TableRow>
+        <TableLayout
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
 
-        <!-- Row 2 column names-->
-        <TableRow>
-            <TextView
-                android:text="Teacher" />
-            <TextView
-                android:text="Monday"
-                android:layout_span="7"/>
-            <TextView
-                android:text="Tuesday"
-                android:layout_span="7"/>
-            <TextView
-                android:text="Wednesday"
-                android:layout_span="7"/>
-            <TextView
-                android:text="Thursday"
-                android:layout_span="7"/>
-            <TextView
-                android:text="Friday"
-                android:layout_span="7"/>
-        </TableRow>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent"
+            >
 
+            <!-- Row 1 column names-->
+            <TableRow
+                android:padding="12dp">
+                <TextView
+                    android:layout_span="35"
+                    android:gravity="center"
+                    android:text="summary timetable of teachers"/>
+            </TableRow>
+
+            <!-- Row 2 column names-->
+            <TableRow>
+                <TextView
+                    android:text="Teacher" />
+                <TextView
+                    android:text="Monday"
+                    android:layout_span="7"/>
+                <TextView
+                    android:text="Tuesday"
+                    android:layout_span="7"/>
+                <TextView
+                    android:text="Wednesday"
+                    android:layout_span="7"/>
+                <TextView
+                    android:text="Thursday"
+                    android:layout_span="7"/>
+                <TextView
+                    android:text="Friday"
+                    android:layout_span="7"/>
+            </TableRow>
 
         <!-- Row 3 period one for all days column names-->
         <TableRow>
@@ -3646,4 +3648,5 @@
         </TableRow>
 
     </TableLayout>
-</LinearLayout>
+
+</RelativeLayout>

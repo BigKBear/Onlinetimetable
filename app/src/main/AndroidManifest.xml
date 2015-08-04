@@ -30,6 +30,9 @@
         <activity android:name=".MasterTeacherTimetable"
             android:screenOrientation="landscape"></activity>
         <activity android:name=".PreviewAssignedTeacher"></activity>
+        <activity android:name=".PreviewAssignedClasses"></activity>
+        <activity android:name=".AssignClasses"></activity>
+        <activity android:name=".Test"></activity>
 
 
     </application>

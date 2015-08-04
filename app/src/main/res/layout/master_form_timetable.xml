@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout
     android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TableLayout
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal">
+        android:layout_height="fill_parent">
+
+    <TableLayout
+        android:padding="2dp"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="*">
 
         <!-- Row 1 column names-->
         <TableRow>
@@ -119,11 +125,10 @@
         <!-- Row 4 period two for all days column names-->
         <TableRow>
             <TextView
-                android:text="Teacher number 1" />
+                android:text="Form number 1" />
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -144,7 +149,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -166,7 +170,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -187,7 +190,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -208,7 +210,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -228,7 +229,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -248,28 +248,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:columnCount="1"
-                android:rowCount="2"
-                android:orientation="horizontal"
-                tools:context=".GridLayoutActivity">
-
-                <TextView
-                    android:text="1.2"
-                    android:layout_gravity="left|top" />
-
-                <TextView
-                    android:text="french"
-                    android:layout_gravity="left|top" />
-
-            </GridLayout>
-
-
-            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -290,7 +268,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -311,7 +288,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -332,7 +308,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -353,7 +328,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -374,7 +348,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -395,7 +368,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -416,7 +388,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -437,7 +408,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -458,7 +428,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -479,7 +448,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -500,7 +468,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -521,7 +488,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -542,7 +508,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -563,7 +528,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -584,7 +548,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -605,7 +568,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -626,7 +588,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -647,7 +608,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -668,7 +628,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -689,7 +648,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -710,7 +668,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -731,7 +688,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -752,7 +708,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -773,7 +728,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -794,7 +748,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -815,7 +768,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -836,7 +788,26 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -860,11 +831,10 @@
         <!-- Row 5 period three for all days column names-->
         <TableRow>
             <TextView
-                android:text="Teacher number 1" />
+                android:text="Form number 1" />
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -885,7 +855,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -907,7 +876,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -928,7 +896,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -949,7 +916,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -969,7 +935,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -989,28 +954,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:columnCount="1"
-                android:rowCount="2"
-                android:orientation="horizontal"
-                tools:context=".GridLayoutActivity">
-
-                <TextView
-                    android:text="1.2"
-                    android:layout_gravity="left|top" />
-
-                <TextView
-                    android:text="french"
-                    android:layout_gravity="left|top" />
-
-            </GridLayout>
-
-
-            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1031,7 +974,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1052,7 +994,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1073,7 +1014,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1094,7 +1034,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1115,7 +1054,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1136,7 +1074,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1157,7 +1094,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1178,7 +1114,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1199,7 +1134,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1220,7 +1154,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1241,7 +1174,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1262,7 +1194,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1283,7 +1214,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1304,7 +1234,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1325,7 +1254,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1346,7 +1274,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1367,7 +1294,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1388,7 +1314,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1409,7 +1334,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1430,7 +1354,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1451,7 +1374,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1472,7 +1394,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1493,7 +1414,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1514,7 +1434,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1535,7 +1454,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1556,7 +1474,6 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1577,7 +1494,26 @@
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/GridLayout35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="1"
@@ -1601,154 +1537,1410 @@
         <!-- Row 6 period four for all days column names-->
         <TableRow>
             <TextView
-                android:text="Teacher number 3" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
+                android:text="Form number 3" />
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
 
         </TableRow>
 
         <!-- Row 7 lunch period for all days column names-->
         <TableRow>
             <TextView
-                android:text="Teacher number 4" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
+                android:text="Form number 4" />
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
 
 
         </TableRow>
@@ -1756,458 +2948,707 @@
         <!-- Row 8 period five for all days column names-->
         <TableRow>
             <TextView
-                android:text="Teacher number 5" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
+                android:text="Form number 5" />
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
 
 
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                tools:context=".GridLayoutActivity">
+
+                <TextView
+                    android:text="1.2"
+                    android:layout_gravity="left|top" />
+
+                <TextView
+                    android:text="french"
+                    android:layout_gravity="left|top" />
+
+            </GridLayout>
         </TableRow>
 
-        <!-- Row 9 period six for all days column names-->
-        <TableRow>
-            <TextView
-                android:text="Teacher number 6" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-
-
-        </TableRow>
-
-        <!-- Row 10 period seven for all days column names-->
-        <TableRow>
-            <TextView
-                android:text="Teacher number 7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:text="Teacher number 8" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:text="Teacher number 9" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:text="Teacher number 10" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-            <TextView
-                android:text="1" />
-            <TextView
-                android:text="2" />
-            <TextView
-                android:text="3" />
-            <TextView
-                android:text="4" />
-            <TextView
-                android:text="5" />
-            <TextView
-                android:text="6" />
-            <TextView
-                android:text="7" />
-        </TableRow>
     </TableLayout>
+    </ScrollView>
 </LinearLayout>

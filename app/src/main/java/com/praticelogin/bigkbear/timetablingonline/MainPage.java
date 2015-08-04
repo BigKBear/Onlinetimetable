@@ -21,6 +21,7 @@ public class MainPage extends Activity {
 
         tv_main_page_username = (TextView)findViewById(R.id.main_TVusername);
         mainlocalDatabase = new LocalDatabase(this);
+
     }
 
     @Override
@@ -37,6 +38,7 @@ public class MainPage extends Activity {
             startActivity(intent);
         }
     }
+
     private boolean authenticate()
     {
         return mainlocalDatabase.getUserLoggedIn();
@@ -49,9 +51,21 @@ public class MainPage extends Activity {
     }
 
     public void onMainPageClick(View v) {
-        if (v.getId() == R.id.timetable_button) {
+        Profile profile = mainlocalDatabase.getLoggedInUser();
+
+        if ((v.getId() == R.id.timetable_button)&& (profile.role)==3) {
             Intent sub = new Intent(this, AdminPage.class);
             startActivity(sub);
+        }
+        if((profile.role == 0) || (profile.role == 2))
+        {
+            Intent studentTime = new Intent(this, MasterFormTimetable.class);
+            startActivity(studentTime);
+        }
+        if(profile.role == 1)
+        {
+            Intent teacherTime = new Intent(this, MasterTeacherTimetable.class);
+            startActivity(teacherTime);
         }
     }
 
@@ -62,5 +76,7 @@ public class MainPage extends Activity {
 
         Intent intent = new Intent(MainPage.this , MainActivity.class);
         startActivity(intent);
+
     }
+
 }

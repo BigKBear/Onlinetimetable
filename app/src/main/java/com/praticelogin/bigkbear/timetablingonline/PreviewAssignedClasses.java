@@ -17,7 +17,7 @@ public class PreviewAssignedClasses extends Activity {
     }
 
     public void onAssignClassesClick(View v){
-        Intent intent = new Intent(PreviewAssignedClasses.this , MainPage.class);
+        Intent intent = new Intent(PreviewAssignedClasses.this , AssignClasses.class);
         startActivity(intent);
     }
 }
