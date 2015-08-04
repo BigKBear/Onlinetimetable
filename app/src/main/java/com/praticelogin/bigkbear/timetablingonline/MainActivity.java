@@ -7,6 +7,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity{
@@ -22,6 +25,22 @@ public class MainActivity extends ActionBarActivity{
         etusername = (EditText)findViewById(R.id.TFusername_login);
         etpassword = (EditText)findViewById(R.id.TFpassword_login);
         localDatabase = new LocalDatabase(this);
+
+
+        /*TableLayout tl = (TableLayout)findViewById(R.id.tableLayout1);
+        TableRow row = new TableRow(this);
+        TextView tv = new TextView(this);
+        tv.setText("This is text");
+
+        tl.addView(row);
+        row.addView(tv);
+
+        //xml
+        <TableLayout android:layout_width="fill_parent"
+        android:id="@+id/tableLayout1" android:layout_height="wrap_content">
+    </TableLayout>
+
+   */
 
     }
 

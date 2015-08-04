@@ -49,19 +49,15 @@ public class AdminPage extends Activity {
     }
 
 
-    public void onModifyClassesClick(View v)
-    {
-        if (v.getId() == R.id.Bmodify_classes) {
-            Intent sub = new Intent(this, AssignSubjectsToClasses.class);
-            startActivity(sub);
-        }
-    }
-
-    public void onAssignTeacherClick(View v)
+    public void onAssignClick(View v)
     {
         if (v.getId() == R.id.Bassign_teachers) {
-            Intent sub = new Intent(this, AssignTeachers.class);
-            startActivity(sub);
+            Intent assignee = new Intent(AdminPage.this, PreviewAssignedTeacher.class);
+            startActivity(assignee);
+        }
+        if (v.getId() == R.id.Bmodify_classes) {
+            Intent mdocl = new Intent(AdminPage.this, PreviewAssignedClasses.class);
+            startActivity(mdocl);
         }
     }
 

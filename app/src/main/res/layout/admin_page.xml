@@ -25,20 +25,18 @@
         android:layout_height="wrap_content"
         android:text="Modify Classes"
         android:id="@+id/Bmodify_classes"
+        android:onClick="onAssignClick"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/TVadminname"
-        android:onClick="onModifyClassesClick"
-        />
+        android:layout_below="@+id/TVadminname"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Assign Teachers"
         android:id="@+id/Bassign_teachers"
-        android:onClick="onAssignTeacherClick"
-        android:layout_below="@+id/textView10"
+        android:onClick="onAssignClick"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/TVadminname" />
 
 
     <Button
